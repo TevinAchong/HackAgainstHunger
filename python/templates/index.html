@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MaxNutrition</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header"id="header">
+        <h1 class="header__heading">
+            Welcome to MaxNutrition
+        </h1>
+        <!--<img src="{{url_for('static', filename='img/down-arrow.svg')}}" alt="Down Arrow" class="header__down-arrow">-->
+    </header>
+
+    <main>
+        <section class="about">
+            <div class="decorated"> 
+                <span>
+                    <img src="{{url_for('static', filename='img/diet.svg')}}" alt="Crops-Icon" class="about-logo">
+                </span>
+            </div>
+
+            <p class="about_paragraph">
+                Our Team developed MaxNutrition in order to combat the issue of malnutrition. 
+                This application uses different methods of accessing open data in order to allow the user to 
+                enter his/her budget and it will in turn inform the user of the most cost-effective selection 
+                of food products to be bought, based on the data on crops within their specific region.
+            </p>
+            <a href="#function" class="start_link">Get Started</a>
+        </section>
+
+        <section class="function" id="function">
+            <form action="" id="budg-form">
+                <label for="user_budget">Enter Budget: </label>
+                <input type="text" placeholder"Budget" id="user_budget">
+                <button class="subm-btn">Submit</button>
+            </form>
+        </section>
+    </main>
+<script src="{{url_for('static', filename='js/main.js')}}"></script>
+</body>
+</html>

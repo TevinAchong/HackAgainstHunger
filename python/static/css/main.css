@@ -1,0 +1,101 @@
+* {
+    margin : 0; 
+    padding : 0; 
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    height : 100vh; 
+    width : 100%; 
+    position : relative; 
+    background-image : linear-gradient(to right bottom, rgba(81, 144, 50, 0.5), rgba(255, 255, 255, 0.5)), url('../img/produce.jpg'); 
+    background-size : cover; 
+    background-repeat: no-repeat; 
+    position : relative; 
+    background-attachment: fixed; 
+}
+
+.header__heading {
+    position : absolute; 
+    top : 50%; 
+    left : 50%; 
+    transform : translate(-50%, -50%);
+    color : white; 
+    font-size : 120px; 
+}
+
+.header__down-arrow {
+    width : 5%; 
+    margin-top : 60px; 
+    position : absolute; 
+    top : 95%; 
+}
+
+.decorated{
+     overflow: hidden;
+     text-align: center;
+ }
+.decorated > span{
+    position: relative;
+    display: inline-block;
+}
+.decorated > span:before, .decorated > span:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 1px solid rgb(81, 144, 50);
+    width: 592px; /* half of limiter */
+    margin: 0 5px;
+}
+.decorated > span:before{
+    right: 100%;
+}
+.decorated > span:after{
+    left: 100%;
+}
+
+.about {
+    margin-top : 50px; 
+    margin-bottom : 50px; 
+}
+
+.about-logo {
+    width : 20%; 
+}
+
+.about_paragraph {
+    text-align : center; 
+    margin-top : 50px; 
+    color : rgb(81, 144, 50); 
+    font-size : 25px; 
+    margin-bottom : 50px;
+}
+
+.start_link {
+     
+    text-align : center; 
+    margin : 0 auto; 
+    padding  : 20px; 
+    border : 1px solid grey; 
+    color : white; 
+    position : absolute; 
+    left : 50%; 
+    transform : translate(-50%, -50%); 
+    background : grey; 
+
+}
+
+.start_link:visited, .start_link:link {
+    color : white; 
+    text-decoration: none; 
+}
+
+.budg-form {
+    margin-top : 60px; 
+    
+}
+
+
